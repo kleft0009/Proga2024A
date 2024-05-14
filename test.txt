@@ -31,3 +31,22 @@ int main() {
     }
     return 0;
 }
+
+// programa para determinar si un numero es positivo o negativo//
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Positivo-Negativo"<<endl;
+    int num=0;
+    cout<<"Ingrese un numero";
+    cin>>num;
+    //operadores relacionales  < > >= <=
+    if(num>0){
+        //si condicion es verdadera ejecuta este codigo
+        cout<<"El numero"<<num<<"es positivo";
+    }else{
+        //si condicion es falasa ejecuta ese codigo
+        cout<<"El numero" <<num<< "es negativo";
+    }
+    return 0;
+}
