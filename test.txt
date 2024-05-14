@@ -1,1 +1,14 @@
-ererereommitgit
+// programa que perimita realizar conversiones de grados C a F//
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Conversion de grados C a F\n";
+    float gradoC=0;
+    float gradoF=0;
+    cout<<"Ingrese los grados C a convertir: ";
+    cin>>gradoC;
+    gradoF=(((9/5.0)*gradoC)) + 32 ;
+    cout<<"Los "<<gradoC<<" grados C representan "<<gradoF<<"F";
+    
+    return 0;
+}
