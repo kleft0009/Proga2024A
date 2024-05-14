@@ -12,3 +12,22 @@ int main() {
     
     return 0;
 }
+
+
+// programa para determinar si un numero es par o impar//
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Par o impar"<<endl;
+    int num=0;
+    cout<<"Ingrese un numero";
+    cin>>num;
+    if(num%2==0){
+        //si condicion es verdadera ejecuta este codigo
+        cout<<"El numero"<<num<<"es par";
+    }else{
+        //si condicion es falasa ejecuta ese codigo
+        cout<<"El numero"<<num<<"Es impar";
+    }
+    return 0;
+}
