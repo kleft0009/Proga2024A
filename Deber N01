@@ -1,0 +1,160 @@
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Numero mayor y menor"<<endl;
+    int num1=0;
+    int num2=0;
+    cout<<"Ingrese el numero 1:";
+    cin>>num1;
+    cout<<"Ingrese el numero 2:";
+    cin>>num2;
+    if(num1>num2){
+        cout<<"El numero"<<num1<<"Es mayor";
+    }else{
+        cout<<"El numero"<<num1<<"Es menor";
+    }
+    if(num1==num2){
+        cout<<"El numero"<<num1<<"Es igual";
+    }else{
+        cout<<"El numero"<<num2<<"no es igual";
+    }
+    return 0;
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Numero primo"<<endl;
+    int num1=0;
+    cout<<"Ingrese el numero:";
+    cin>>num1;
+    if(num1%2!=0 & num1%3!=0 & num1%5!=0 & num1%7!=0 ){
+        cout<<"El numero"<<num1<<"es primo";
+    }else{
+        cout<<"El numero"<<num1<<"no es primo";
+    }
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Descuento";
+   float num1=0;
+   float num2=0.15;
+   cout<<"Ingrese el valor:";
+   cin>>num1;
+   if(num1>1000){
+       cout<<"El valor tiene descuento"<<num1<<endl;
+   }else{
+       cout<<"El valor no tiene descuento"<<num1<<endl;
+   }
+   cout<<"Descuento del 15%"<<num1*num2<<endl;
+   cout<<"Total"<<(num1*num2)+num1;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Mayor de edad"<<endl;
+   int num1=0;
+   cout<<"Ingrese su edad:";
+   cin>>num1;
+   if(num1>18){
+       cout<<"Es mayor de edad"<<num1<<endl;
+   }else{
+       cout<<"Es menor de edad"<<num1<<endl;
+   }
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Temperatura"<<endl;
+   int num1=0;
+   cout<<"Ingrese la temperatura:";
+   cin>>num1;
+   if(num1<10){
+       cout<<"El clima es frio"<<num1<<endl;
+   }
+   if(num1>10 & num1<=25){
+       cout<<"El clima es templado"<<num1<<endl;
+   }
+   if(num1>25){
+       cout<<"El clima es caliente";
+   }
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Horaio"<<endl;
+   int num1=0;
+   cout<<"Ingrese la hora:";
+   cin>>num1;
+   if(num1>0 & num1<=12){
+       cout<<"Buenos dias"<<num1<<endl;
+   }
+   if(num1>12 & num1<=17){
+       cout<<"Buenas tardes"<<num1<<endl;
+   }
+   if(num1>17 & num1<=22){
+       cout<<"Buenas noches";
+   }
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Propina"<<endl;
+   float num1=0;
+   float num2=0.15;
+   cout<<"Ingres el valor:";
+   cin>>num1;
+   if(num1>50){
+       cout<<"Adicionar la propina"<<endl;
+   }else{ 
+       cout<<"No adicionar la propina"<<endl;
+   }
+   cout<<"El valor de la propina es:"<<num1*num2;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Leap year"<<endl;
+   int num1=0;
+   cout<<"Enter the year:";
+   cin>>num1;
+   if(num1%4==0 || num1&400==0 ){
+       cout<<"It is leap year"<<endl;
+   }else{ 
+       cout<<"It is not leap year"<<endl;
+   }
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Salario"<<endl;
+   float num1=0;
+   float num2=0.05;
+   cout<<"Ingrese su salario:";
+   cin>>num1;
+   if(num1<1000){
+       cout<<"Su salio sera remunerado"<<endl;
+   }else{ 
+       cout<<"Su salario no sera remunerado"<<endl;
+   }
+   cout<<"Remuneracion del 5% : "<<num1*num2<<endl;
+   cout<<"Salario total"<<(num1*num2)+num1;
+    return 0;
+}
