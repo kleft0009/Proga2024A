@@ -150,7 +150,7 @@ int main() {
    cout<<"Ingrese su salario:";
    cin>>num1;
    if(num1<1000){
-       cout<<"Su salio sera remunerado"<<endl;
+       cout<<"Su salario sera remunerado"<<endl;
    }else{ 
        cout<<"Su salario no sera remunerado"<<endl;
    }
