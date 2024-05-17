@@ -133,7 +133,7 @@ int main() {
    int num1=0;
    cout<<"Enter the year:";
    cin>>num1;
-   if(num1%4==0 || num1&400==0 ){
+   if(num1%4==0 || num1&400==0 || num1&100==0){
        cout<<"It is leap year"<<endl;
    }else{ 
        cout<<"It is not leap year"<<endl;
