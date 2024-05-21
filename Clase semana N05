@@ -117,3 +117,70 @@ int main() {
     return 0;
 }
 
+// un menu repetitivo
+#include <iostream>
+using namespace std;
+int main() {
+        cout<<"Calculadora ";
+        float num1=0, num2=0, resultado=0;
+        int opcion;
+    do{
+        cout<<endl;
+        cout<<"Opciones: "<<endl;
+        cout<<"1. Suma "<<endl;
+        cout<<"2. Resta "<<endl;
+        cout<<"3. Producto "<<endl;
+        cout<<"4. Division "<<endl;
+        cout<<"5. Salida "<<endl;
+        cout<<"Ingrese la opcion: ";
+        cin>>opcion;
+        switch(opcion){
+            case 1: {
+                cout<<"Ingrese el 1er numero: ";
+                cin>>num1;
+                cout<<"Ingrese el 2er numero: ";
+                cin>>num2;
+                resultado=num1+num2;
+                cout<<"Suma "<<resultado;
+                cout<<endl;
+                break;
+            }
+            case 2: {
+                cout<<"Ingrese el 1er numero: ";
+                cin>>num1;
+                cout<<"Ingrese el 2er numero: ";
+                cin>>num2;
+                resultado=num1-num2;
+                cout<<"Resta "<<resultado;
+                break;
+            }
+            case 3: {
+                cout<<"Ingrese el 1er numero: ";
+                cin>>num1;
+                cout<<"Ingrese el 2er numero: ";
+                cin>>num2;
+                resultado=num1*num2;
+                cout<<"Producto "<<resultado;
+                break;
+            }
+            case 4: {
+                cout<<"Ingrese el 1er numero: ";
+                cin>>num1;
+                cout<<"Ingrese el 2er numero: ";
+                cin>>num2;
+                resultado=num1/num2;
+                cout<<"Division "<<resultado;
+                break;
+            }
+            case 5: {
+                return 0;
+                break;
+            }
+            default:{
+                cout<<"La opcion ingresado no existe";
+                break;
+            } 
+        }
+    }while(opcion>=1 || opcion<=5);
+    return 0;
+}
