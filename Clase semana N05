@@ -13,3 +13,107 @@ int main() {
     cout<<"La suma es:"<<resultado;
     return 0;
 }
+
+// programa para dibujar un cuadrado con *
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Programa para dibujar un uadrado con *"<<endl;
+    int lado=0;
+    cout<<"Ingrese el valor del lado: ";
+    cin>>lado;
+    for(int i=0; i-lado; i++){
+        for(int j=0; j-lado; j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+// programa para dibujar un cuadrado con *
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Programa para dibujar un uadrado con *"<<endl;
+    int lado=0;
+    cout<<"Ingrese el valor del lado: ";
+    cin>>lado;
+    for(int i=0; i-lado; i++){
+        for(int j=0; j-lado; j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    }
+    return 0;
+}
+
+// promgrama para contar hasta el 20
+// promgrama para contar hasta el 20
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Contar numero hasta el 20"<<endl;
+    int contador=0;
+    while(contador<=20){
+        cout<<contador<<" ";
+        contador++;
+    }
+    return 0;
+}
+
+// promgrama simular una cuenta regresiva
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Contar regresiva"<<endl;
+    int inicio=0;
+    cout<<"Ingrese el valor mas alto";
+    cin>>inicio;
+    while(inicio>0){
+        cout<<inicio<<" ";
+        inicio--;
+    }
+    return 0;
+}
+
+// prgrama muestre los numeros pares hasta un numero ingresado
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Numeros pares"<<endl;
+    int num=0;
+    cout<<"Ingrese un numero: ";
+    cin>>num;
+    int i=2;
+    while(i<=num){
+        cout<<i<<" ";
+        //i=1+2;
+        i+=2;
+    }
+    return 0;
+}
+
+// prgrama muestre los numeros pares hasta un numero ingresado
+#include <iostream>
+using namespace std;
+int main() {
+    do(
+        sentencias
+    )while(condicion);
+    return 0;
+}
+
+// prgrama muestre los numeros pares hasta un numero ingresado
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    do(
+        cout<<"Ingresa un numero: ";
+        cin>>num;
+    )while(num<1 || num>10);
+    return 0;
+}
+
