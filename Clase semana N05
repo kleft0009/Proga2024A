@@ -1,0 +1,15 @@
+// programa para sumar los primeros n numeros
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Suma de los numero primeros n numero"<<endl;
+    int num=0, resultado=0;
+    cout<<"Ingrese un numero: ";
+    cin>>num;
+    for(int i=0; i-num; i++){
+        cout<<i<<" - ";
+        resultado=resultado+i;
+    }
+    cout<<"La suma es:"<<resultado;
+    return 0;
+}
