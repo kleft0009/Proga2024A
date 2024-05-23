@@ -1,0 +1,90 @@
+//  Escriibir un programa que solicite al usuario un numero e imprima la tabla de multiplicar de ese numero hasta el 30
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Tabla de multiplicar"<<endl;
+    int numero;
+    cout<<"Ingrese un numero: ";
+    cin>>numero;
+    for (int i = 2 ; i <=30 ; i++){
+        cout<<numero<<" x "<<i<<" = "<<numero*1<<endl;
+    }
+    return 0;
+}
+
+//  Escriibir un programa que realice operaciones de seno, coseno, tangente, arco seno, arco coseno, arco tangente. Utiliza un menu con switch
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    cout<<"Calculadora"<<endl;
+    int opciones;
+    double resultado;
+    float i;
+    do{
+        cout<<"1. Seno"<<endl;
+        cout<<"2. Coseno"<<endl;
+        cout<<"3. Tangente"<<endl;
+        cout<<"4. Arco seno"<<endl;
+        cout<<"5. Arco coseno"<<endl;
+        cout<<"6. Arco tangente"<<endl;
+        cout<<"opciones"<<endl;
+        cin>>opciones;
+        switch (opciones){
+            case 1: {
+                cout<<"Ingrese el numero: "<<endl;
+                cin>>i;
+                resultado=sin(i);
+                cout<<"El seno"<<resultado;
+                cout<<endl;
+                break;
+            }
+            case 2: {
+                cout<<"Ingrese el numero: "<<endl;
+                cin>>i;
+                resultado=cos(i);
+                cout<<"El coseno"<<resultado;
+                cout<<endl;
+                break;
+            }
+            case 3: {
+                cout<<"Ingrese el numero: "<<endl;
+                cin>>i;
+                resultado=tan(i);
+                cout<<"El tangente"<<resultado;
+                cout<<endl;
+                break;
+            }
+            case 4: {
+                cout<<"Ingrese el numero: "<<endl;
+                cin>>i;
+                resultado=asin(i);
+                cout<<"El arcoseno"<<resultado;
+                cout<<endl;
+                break;
+            }
+            case 5: {
+                cout<<"Ingrese el numero: "<<endl;
+                cin>>i;
+                resultado=acos(i);
+                cout<<"El arcoseno"<<resultado;
+                cout<<endl;
+                break;
+            }
+            case 6: {
+                cout<<"Ingrese el numero: "<<endl;
+                cin>>i;
+                resultado=atan(i);
+                cout<<"El arcotangente"<<resultado;
+                cout<<endl;
+                break;
+            }
+            default:{
+                cout<<"La opcion no existe"<<endl;
+                break;
+            }
+        }
+        
+    }while (opciones<=1 || opciones>=6);
+    return 0;
+}
