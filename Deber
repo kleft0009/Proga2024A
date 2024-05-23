@@ -1,0 +1,22 @@
+// Interes compuesto
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    double inversion;
+    double interes;
+    double saldo;
+    int years;
+    cout<<"Ingrese el valor: "<<endl;
+    cin>>inversion;
+    cout<<"Ingrese el interes:"<<endl;
+    cin>>interes;
+    cout<<"Number of years: "<<endl;
+    cin>>years;
+    for(int i = 1 ; i <= years ; ++i){
+        saldo=inversion * pow((1 + interes/100), i);
+        cout<<"Saldo final"<<i<<" "<<saldo<<endl;
+    }
+    
+    return 0;
+}
