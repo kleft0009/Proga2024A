@@ -1,3 +1,155 @@
+// Cuenta regresiva
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 100; i >= 1; --i) {
+        cout << i << endl;
+    }
+    return 0;
+}
+
+//Programa
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    do {
+        cout << "Ingrese un numero: ";
+        cin >> num;
+    } while(numero < 1 || numero >= 10);
+    cout << "Dentro del rangp: " << numero << endl;
+    return 0;
+}
+
+//Menu de opciones
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int opcion;
+    do {
+        cout<<"1. Jugar"<<endl;
+        cout<<"2. Ayuda"<<endl;
+        cout<<"3. Salir";
+        cin<<opcion;
+        cout << "Seleccione: ";
+        cin >> opcion;
+    } while(opcion != 3);
+    return 0;
+
+//Suma de numero impares
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+    for(int i = 1; i <= 100; i += 2) {
+        suma += i;
+    }
+    cout << "La suma es: " << suma << endl;
+    return 0;
+
+//Password
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string contrasena = "485";
+    string try;
+    do {
+        cout << "Ingrese la contraseña: ";
+        cin >> try;
+    } while(try != contrasena);
+    cout << "Valido" << endl;
+    return 0;
+}
+
+//Calculadora
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1;
+    int num2;
+    int resultado = 0;
+    cout << "Ingrese el numero 1: "<<endl;
+    cin>>num1;
+    cout << "Ingrese el numero 2: "<<endl;
+    cin >>num2;
+    while(num2 > 0) {
+        resultado += a;
+        --b;
+    }
+    cout << "El resultado es: " << resultado << endl;
+    return 0;
+}
+
+// Rectangulo
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int altura;
+    int base;
+    cout << "Ingrese la altura: ";
+    cin >> altura;
+    cout << "Ingrese la base: ";
+    cin >> base;
+    for(int i = 1; i <= altyra; ++i) {
+        for(int j = 1; j <= base; ++j) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Factorial
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    int factorial = 1;
+    cout << "Ingrese un número: ";
+    cin >> num;
+    while(num > 1) {
+        factorial *= num;
+        --num;
+    }
+    cout << "Respuesta: " << factorial << endl;
+    return 0;
+}
+
+//Reversa
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    int inverso = 0;
+    cout << "Ingrese un número: ";
+    cin >> num;
+    do {
+        inverso = (inverso * 10) + (num % 10);
+        num /= 10;
+    } while(num > 0);
+    cout << "Numero invertido: " << reversa << endl;
+    return 0;
+}
+
 // Interes compuesto
 #include <iostream>
 #include <cmath>
