@@ -20,8 +20,8 @@ int main() {
     do {
         cout << "Ingrese un numero: ";
         cin >> num;
-    } while(numero < 1 || numero >= 10);
-    cout << "Dentro del rangp: " << numero << endl;
+    } while(num < 1 || num> 10);
+    cout << "Dentro del rango: " << num << endl;
     return 0;
 }
 
@@ -35,12 +35,14 @@ int main() {
     do {
         cout<<"1. Jugar"<<endl;
         cout<<"2. Ayuda"<<endl;
-        cout<<"3. Salir";
-        cin<<opcion;
+        cout<<"3. Salir"<<endl;
+        cout<<"Opcion"<<endl;
+        cin>>opcion;
         cout << "Seleccione: ";
         cin >> opcion;
     } while(opcion != 3);
     return 0;
+}
 
 //Suma de numero impares
 
@@ -50,10 +52,11 @@ using namespace std;
 int main() {
     int sum = 0;
     for(int i = 1; i <= 100; i += 2) {
-        suma += i;
+        sum += i;
     }
-    cout << "La suma es: " << suma << endl;
+    cout << "La suma es: " << sum << endl;
     return 0;
+}
 
 //Password
 
@@ -63,11 +66,11 @@ using namespace std;
 
 int main() {
     string contrasena = "485";
-    string try;
+    string pass;
     do {
         cout << "Ingrese la contraseña: ";
-        cin >> try;
-    } while(try != contrasena);
+        cin >> pass;
+    } while(pass != contrasena);
     cout << "Valido" << endl;
     return 0;
 }
@@ -86,8 +89,8 @@ int main() {
     cout << "Ingrese el numero 2: "<<endl;
     cin >>num2;
     while(num2 > 0) {
-        resultado += a;
-        --b;
+        resultado += num1;
+        --num2;
     }
     cout << "El resultado es: " << resultado << endl;
     return 0;
@@ -105,7 +108,7 @@ int main() {
     cin >> altura;
     cout << "Ingrese la base: ";
     cin >> base;
-    for(int i = 1; i <= altyra; ++i) {
+    for(int i = 1; i <= altura; ++i) {
         for(int j = 1; j <= base; ++j) {
             cout << "*";
         }
@@ -146,7 +149,7 @@ int main() {
         inverso = (inverso * 10) + (num % 10);
         num /= 10;
     } while(num > 0);
-    cout << "Numero invertido: " << reversa << endl;
+    cout << "Numero invertido: " << inverso << endl;
     return 0;
 }
 
