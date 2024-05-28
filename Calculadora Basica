@@ -1,0 +1,67 @@
+# include <iostream>
+# include <cmath>
+using namespace std;
+void titulo(){
+    cout<<"Calculadora basica de numeros"<<endl;
+}
+int suma(int x, int y){
+    //int resultado=x+y;
+    //return resultado;
+    return x+y;
+}
+int resta(int a, int b){
+    return a-b;
+}
+// esta a y b solo viven en esta funcion
+int producto(int r, int s){
+    return r*s;
+}
+float division(float a, float b){
+    return a/b;
+}
+
+int main(){
+    titulo();
+    cout<<division(5,4);
+    return 0;
+}
+
+# include <iostream>
+# include <cmath>
+using namespace std;
+void titulo(){
+    cout<<"Calculadora basica de numeros"<<endl;
+}
+int suma(int x, int y){
+    //int resultado=x+y;
+    //return resultado;
+    return x+y;
+}
+int resta(int a, int b){
+    return a-b;
+}
+// esta a y b solo viven en esta funcion
+int producto(int r, int s){
+    return r*s;
+}
+float division(float a, float b){
+    return a/b;
+}
+int cuadrado(int a){
+    return pow(a,2);
+    // me va a a elevar a la potencia 2 en a eso quiere decir pow(a,2)
+}
+float raiz(int x){
+    //return pow(a,1/2);
+    return sqrt(x);
+}
+int main(){
+    titulo();
+    cout<<suma(5,4)<<endl;
+    cout<<resta(5,4)<<endl;
+    cout<<producto(5,4)<<endl;
+    cout<<division(5,4)<<endl;
+    cout<<cuadrado(5)<<endl;
+    cout<<raiz(5)<<endl;
+    return 0;
+}
