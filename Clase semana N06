@@ -387,6 +387,8 @@ int main() {
 
 //return es para que nos vuelvas el resultado
 
+
+//funcion con 2 parametros
 #include <iostream>
 using namespace std;
 /* 
@@ -452,3 +454,140 @@ int main() {
     cout<<"Resultado: "<<resta(num_1, num_2);
     return 0;
 }
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+void titulo(){
+    cout<<"Calculadora basica"<<endl;
+}
+int suma_2(int a, int b){
+    int resultado=0;
+    resultado=a+b;
+    return resultado;
+}
+int resta(int x, int y){
+    int resta=0;
+    resta=x-y;
+    return resta;
+}
+float division_3(float r, int s){
+    float resultado=0;
+    resultado=r/s;
+    return resultado;
+}
+//cundo llega aca se cambia porque tenemos en int por eso cambiamos a float, cuando va al return revisa la funcion y como esta en int cambia por eso tambien cambiamos esto
+int main() {
+    titulo();
+    float num_1=0, num_2=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>num_1;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>num_2;
+    cout<<"Resultado: "<<division_3(num_1, num_2);
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+void titulo(){
+    cout<<"Calculadora basica"<<endl;
+}
+int suma_2(int a, int b){
+    int resultado=0;
+    resultado=a+b;
+    return resultado;
+}
+int resta(int x, int y){
+    int resta=0;
+    resta=x-y;
+    return resta;
+}
+float division_3(float r, char h, float s){
+    float resultado=0;
+    resultado=r/s;
+    return resultado;
+}
+//cundo llega aca se cambia porque tenemos en int por eso cambiamos a float, cuando va al return revisa la funcion y como esta en int cambia por eso tambien cambiamos esto
+int main() {
+    titulo();
+    float num_1=0, num_2=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>num_1;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>num_2;
+    cout<<"Resultado: "<<division_3(num_1,'g', num_2);
+    return 0;
+}
+// en char si le pongo espacio me declara como 2
