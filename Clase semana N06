@@ -20,3 +20,435 @@ int main() {
     cout<<"Suma: "<<c;
     return 0;
 }
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+int saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+int suma(){
+    int a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a+b;
+    cout<<"Suma: "<<c;
+}
+int main() {
+    saludo(); //llamar o invocar  a la funcion
+    cout<<"Suma de dos numeros"<<endl;
+    suma();
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+int saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+int division(){
+    int a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int main() {
+    saludo(); //llamar o invocar  a la funcion
+    cout<<"Suma de dos numeros"<<endl;
+    division();
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+int saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+int division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int main() {
+    saludo(); //llamar o invocar  a la funcion
+    cout<<"Suma de dos numeros"<<endl;
+    division();
+    return 0;
+}
+
+//una funcion void no puede retornar nada  cuando utilizo una funcion
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int main() {
+    saludo(); //llamar o invocar  a la funcion
+    cout<<"Suma de dos numeros"<<endl;
+    division();
+    return 0;
+}
+
+//para int usamos un return
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+int main() {
+    saludo(); //llamar o invocar  a la funcion
+    cout<<"Suma de dos numeros"<<endl;
+    division_2();
+    return 0;
+}
+
+//funciones sin parametros
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+int main() {
+    saludo(); //llamar o invocar  a la funcion
+    cout<<"Suma de dos numeros"<<endl;
+    parImpar();
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+void titulo(){
+    cout<<"Calculadora basica"<<endl;
+}
+int suma_2(int a, int b){
+    int resultado=0;
+    resultado=a+b;
+    return resultado;
+}
+//solo es para declarar en esta funcion
+int main() {
+    //saludo(); //llamar o invocar  a la funcion
+    //cout<<"Suma de dos numeros"<<endl;
+    //parImpar();
+    titulo();
+    float num_1=0, num_2=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>num_1;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>num_2;
+    cout<<"Resultado: "<<suma_2(num_1, num_2);//suma(5,2)
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+void titulo(){
+    cout<<"Calculadora basica"<<endl;
+}
+int suma_2(int a, int b){
+    int resultado=0;
+    resultado=a+b;
+    return resultado;
+}
+int main() {
+    //saludo(); //llamar o invocar  a la funcion
+    //cout<<"Suma de dos numeros"<<endl;
+    //parImpar();
+    titulo();
+    int num_1=0, num_2=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>num_1;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>num_2;
+    cout<<"Resultado: "<<suma_2(num_1, num_2);//suma(5,2)
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+void titulo(){
+    cout<<"Calculadora basica"<<endl;
+}
+int suma_2(int a, int b){
+    int resultado=0;
+    resultado=a+b;
+    return resultado;
+}
+int main() {
+    //saludo(); //llamar o invocar  a la funcion
+    //cout<<"Suma de dos numeros"<<endl;
+    //parImpar();
+    titulo();
+    int num_1=0, num_2=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>num_1;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>num_2;
+    cout<<"Resultado: "<<suma_2(8,9);//suma(5,2)//aqui no le nos fijaos en los valores que nos dan
+    return 0;
+}
+
+//return es para que nos vuelvas el resultado
+
+#include <iostream>
+using namespace std;
+/* 
+tipo nombrefuncion{
+     sentencias
+}*/
+void saludo(){
+    cout<<"Hola, bienvenido"<<endl;
+}
+void division(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+}
+int division_2(){
+    float a=0, b=0, c=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    c=a/b;
+    cout<<"Suma: "<<c;
+    return c;
+}
+void parImpar(){
+    int num=0;
+    cout<<"Ingres el numero";
+    cin>>num;
+    if (num%2==0){
+        cout<<"Numero par";
+    }else{
+        cout<<"Numero impar";
+    }
+}
+void titulo(){
+    cout<<"Calculadora basica"<<endl;
+}
+int suma_2(int a, int b){
+    int resultado=0;
+    resultado=a+b;
+    return resultado;
+}
+int resta(int x, int y){
+    int resta=0;
+    resta=x-y;
+    return resta;
+}
+int main() {
+    //saludo(); //llamar o invocar  a la funcion
+    //cout<<"Suma de dos numeros"<<endl;
+    //parImpar();
+    titulo();
+    int num_1=0, num_2=0;
+    cout<<"Ingrese el primer numero: ";
+    cin>>num_1;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>num_2;
+    cout<<"Resultado: "<<suma_2(8,9);//suma(5,2)
+    cout<<"Resultado: "<<resta(num_1, num_2);
+    return 0;
+}
