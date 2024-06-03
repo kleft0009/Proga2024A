@@ -98,3 +98,22 @@ int main() {
     }
     return 0;
 }
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int i,h,inicio,fin,cuadrado,num;
+    inicio=5;
+    fin=8;
+    do{
+        cin>>num;
+        cuadrado=num*num;
+        cout<<num<<"*"<<num<<" = "<<cuadrado<<endl;
+    }while(num!=4);
+    /*
+    for(i=inicio;i<=fin;i++){
+        cuadrado=i*i;
+        cout<<i<<"*"<<i<<" = "<<cuadrado<<endl;
+    }*/
+}
