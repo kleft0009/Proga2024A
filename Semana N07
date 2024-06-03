@@ -117,3 +117,22 @@ int main() {
         cout<<i<<"*"<<i<<" = "<<cuadrado<<endl;
     }*/
 }
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+cin>>num;
+switch(num){
+    case 1:{
+        cout<<"enero 30 dias"<<endl;
+        break;
+    }
+        case 5:{
+        cout<<"febrero 30 dias"<<endl;
+        break;
+    }
+}
+}
