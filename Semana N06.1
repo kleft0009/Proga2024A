@@ -1,0 +1,69 @@
+//Calcular la suma hasta que alcance 100
+#include <iostream>
+# include <cmath>
+using namespace std;
+int main() {
+    int num , invertido=0;
+    cout<<"Ingrese un numero: ";
+    cin>>num;
+    while(num !=0 ){
+        int digito=num%10;
+        invertido=invertido*10 ÷ digito;
+        num /=10;
+    }
+    cout<<"El numero invertido es: "<<invertido<<endl;
+    return 0;
+}
+
+// Suma de numero negatuivos
+#include <iostream>
+using namespace std;
+int main() {
+    int num, cont;
+    cout<<"Ingrese el numero";
+    cin>>num;
+    while(num!=0){
+        if(num<0){
+            cont++;
+        }
+        cout<<"Ingrese otro numero";
+        cin>>num;
+    }
+    cout<<"Ingesaste"<<cont<<"numeros negativos";
+    return 0;
+}
+
+// Suma de notas
+#include <iostream>
+using namespace std;
+int main() {
+    int nota, contador, numcal;
+    double suma;
+    if(numcal>0)
+    while(contador<numcal)
+    cout<<"Ingrese una nota"<<(contador+1)<<" :";
+    cin>>nota;
+    suma+=nota;
+    contador++;}
+    double promedio=suma/numcal;
+    cout<<"El promedio es"<<promedio<<endl;
+    return 0;
+}
+
+// Calculadora de 15 si supera los 100 dolares
+#include <iostream>
+using namespace std;
+int main() {
+    int i,j, total;
+    cout<<"Ingrese el valor: "<<endl;
+    cin>>i;
+    if(i>=100){
+        j=i*0.15;
+        cout<<"Tiene descuento: "<<j<<endl;
+    }else{
+        cout<<"No tiene descuento: "<<endl;
+    }
+    total=j+i;
+    cout<<"Valor final: "<<total<<endl;
+    return 0;
+}
