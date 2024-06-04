@@ -67,3 +67,48 @@ int main() {
     cout<<"Valor final: "<<total<<endl;
     return 0;
 }
+
+// si es par le hace el doble si no es no hace nada
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int numero, resultado=0;
+    cout<<"Ingrese el numero: "<<endl;
+    cin>>numero;
+    if(numero%2==0){
+        resultado=numero*2;
+        cout<<"Doble"<<resultado<<endl;
+    }else{
+        cout<<"Impar"<<numero<<endl;
+    }
+    return 0;
+}
+
+// Sumar los multiplos de 7 entre 50 y 100
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    for(int i=1; i<=50; i++){
+        if(i%7==0){
+            cout<<"Multiplo: "<<i<<endl;
+        }
+    }
+    return 0;
+}
+
+// Sumar los multiplos de 7 entre 50 y 100
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int suma;
+    for(int i=50; i<=100; i++){
+        if(i%7==0){
+            suma+=i;
+        }
+        cout<<"Suma: "<<suma<<endl;
+    }
+    return 0;
+}
