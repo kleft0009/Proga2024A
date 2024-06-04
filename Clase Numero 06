@@ -1,0 +1,32 @@
+//Calcular la suma hasta que alcance 100
+#include <iostream>
+using namespace std;
+int main() {
+    int resultado=100, i, j;
+    cout<<"Ingrese el numero 1: "<<endl;
+    cin>>i;
+    cout<<"Ingrese el numero 1: "<<endl;
+    cin>>j;
+    resultado=i+j;
+    if (resultado >= 100){
+        cout<<"Resultado"<<resultado;
+    }else{
+        cout<<" "<<endl;
+    }
+    return 0;
+}
+
+//Calcular de indice de masa corporal
+#include <iostream>
+# include <cmath>
+using namespace std;
+int main() {
+    float resultado, i, j;
+    cout<<"Ingrese su peso: "<<endl;
+    cin>>i;
+    cout<<"Ingrese su altura: "<<endl;
+    cin>>j;
+    resultado=i/(pow(j,2));
+    cout<<"IMC"<<resultado<<endl;
+    return 0;
+}
