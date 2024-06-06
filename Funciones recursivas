@@ -1,0 +1,21 @@
+//Funciones recursivas
+#include <iostream>
+using namespace std;
+//funcion
+int suma(int a, int b){
+    return a+b;
+}
+//funciones recursivas son funciones que se llaman asi mismas necesitamos un altilujio
+//para crear es necesario definir caso base y caso base (1 o varios casos) y caso recursivo (llama hasta que se cumpla)
+//caso base y caso recursivo
+int factorial(int n){
+    if(n==0 || n==1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
+}
+int main() {
+    cout<<factorial(5)<<endl;
+    return 0;
+}
