@@ -19,3 +19,42 @@ int main() {
     cout<<factorial(5)<<endl;
     return 0;
 }
+
+//Funciones recursivas
+#include <iostream>
+using namespace std;
+//funcion
+int suma(int a, int b){
+    return a+b;
+}
+//funciones recursivas son funciones que se llaman asi mismas necesitamos un altilujio
+//para crear es necesario definir caso base y caso base (1 o varios casos) y caso recursivo (llama hasta que se cumpla)
+//caso base y caso recursivo
+/*
+int factorial(int n){
+    if(n==0 || n==1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
+    */
+int fibo(int x){
+    if(x==0){
+        return 0;
+    }else if(x==1){
+        return 1;
+    }else{
+        return fibo(x-1)+fibo(x-2);
+    }
+
+}
+
+int main() {
+    int num;
+    cout<<"Ingrese el numero";
+    cin>>num;
+    for(int i=0; i<=num; i++){
+        cout<<fibo(i)<<" - ";
+    }
+    return 0;
+}
