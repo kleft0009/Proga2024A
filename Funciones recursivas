@@ -58,3 +58,19 @@ int main() {
     }
     return 0;
 }
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    float n, m, j, resultado;
+    cout<<"Ingrese el diviendo";
+    cin>>n;
+    cout<<"Ingrese el divisor";
+    cin>>m;
+    cout<<"Ingrese el cociente";
+    cin>>j;
+    resultado=(n-(m*j));
+    cout<<"El residuo es: "<<resultado<<endl;
+    return 0;
+}
