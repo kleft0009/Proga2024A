@@ -46,3 +46,51 @@ if(true){
     console.log(num_3);
 }
 console.log(num_3);
+//funciones
+function suma(numero_1,numero_2){
+    return console.log("Suma"+(numero_1+numero_2));
+}
+function calculadora(numero_1,numero_2){
+    console.log("Suma"+(numero_1+numero_2));
+    console.log("Resta"+(numero_1-numero_2));
+    console.log("Division"+(numero_1/numero_2));
+    console.log("Multiplicacion"+(numero_1*numero_2));
+}
+suma(4,6);
+calculadora(5,2);
+function cuadrado(num){
+    return console.log(num*num);
+}
+cuadrado(5);
+var anio=2024;
+if(anio>=2024){
+    console.log("Superamos la pandemia");
+}else{
+    console.log("Estamos en pandemia")
+}
+var edad=20;
+switch(edad){
+    case 12:{
+        console/log("Eres adolecente");
+        break;
+    }
+    case 18:{
+        console.log("Eres mayor de edad");
+        break;
+    }
+    case 40:{
+        console.og("Eres adulto");
+        break;
+    }
+    case 65:{
+        console.log("Eres adulto mayor");
+        break;
+    }
+    default:{
+        console.log("Edad no especificada");
+        break;
+    }
+}
+for(var i=0; i<=10; i++){
+    console.log(i);
+}
