@@ -94,3 +94,10 @@ switch(edad){
 for(var i=0; i<=10; i++){
     console.log(i);
 }
+alert("Hola")
+//Vectores
+var peliculas=["XMEN","Intensamente","Toy Story","Titanic","Saw"];
+console.log(peliculas[3]);
+peliculas[3]="La vida es bella";
+console.log(peliculas);
+//Tomamos como vectores a peliculas inicia desde o
