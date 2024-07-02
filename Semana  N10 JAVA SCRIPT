@@ -1,0 +1,48 @@
+// Clase semana N10
+#include <iostream>
+using namespace std;
+//programa para sumar dos numeros
+int main() {
+    int a, b,c;
+    a=3;
+    cout<<"Suma de numeros\n";
+    cout<<"Ingrese el 1er numero: ";
+    cin>>a;
+    cout<<"Ingrese el 2do numero: ";
+    cin>>b;
+    c=a+b;
+    cout<<"Resultado de"<<c;
+    return 0;
+}
+//JAVA SCRIPT
+// Dar un comportamiendo en una pagina web
+//declaracion de variables
+var numero=5;
+var nombre="Daniel";
+var letra="a";
+var num_2=10;
+console.log(nombre, numero, letra);
+//Al pasar entre comillas estoy pasando como cadena por eso muestra 510
+//Sin comillas si suma
+//Add + para hacer como una cadena y poner las variables entre parentesisi para que realize la suma
+console.log("Resultado es: "+(numero+(+num_2)));
+var estado=true;
+console.log(estado);
+var numeros=[1,2,3,4,5];
+//En JS se define con corchetes
+console.log(numeros);
+console.log(typeof numero);
+console.log(typeof nombre);
+console.log(typeof estado);
+console.log(typeof numeros);
+var num_3=6;
+//Varibles globales
+let numero_2=9;
+//Variables locales
+console.log(num_3);
+if(true){
+    //var numero=4;
+    let num_3=4;
+    console.log(num_3);
+}
+console.log(num_3);
