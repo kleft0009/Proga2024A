@@ -101,3 +101,20 @@ console.log(peliculas[3]);
 peliculas[3]="La vida es bella";
 console.log(peliculas);
 //Tomamos como vectores a peliculas inicia desde o
+
+var numero=7;
+console.log(numero);
+//ventana
+//
+if(numero==7){
+ //alert("Numero: "+numero);
+ var dato=prompt("Ingrese un numero");
+ console.log("El sato ingresado es:"+dato);
+}
+//utilizando la ventana promp desarrollar una calculadora basica 
+ var num_1=prompt("Ingrese 1er numero")
+ var num_2=prompt("Ingrese 2do numero");
+ console.log("Suma: "+((+num_1)+(+num_2)));
+ console.log("Resta: "+(num_1-num_2));
+ console.log("Multiplicacion: "+(num_1*num_2));
+ console.log("Division: "+(num_1/num_2));
