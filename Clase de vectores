@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main() {
+    //me permite menores a 4 tambien
+    int numero[4]={1,10,3,4};
+    int media;
+    numero[0]=1;
+    numero[1]=1;
+    numero[2]=1;
+    numero[3]=1;
+    media=(numero[0]+numero[1]+numero[2]+numero[3]);
+    cout<<"Media es: "<<media<<end;
+    cout<<numero[3];
+    return 0;
+}
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    //me permite menores a 4 tambien
+    int numero[]={1,10,3,5,7,8,9,10};
+    int meses[12]={31,28,31,31};
+    for(int i=0;i<=11;i++){
+        cout<<numero[i]<<"-";
+    }
+    //numero.lenght te da el sinze
+    /*numero[0]=1;
+    numero[1]=1;
+    numero[2]=1;
+    numero[3]=1;
+    media=(numero[0]+numero[1]+numero[2]+numero[3]);
+    cout<<"Media es: "<<media<<end;*/
+    cout<<numero[3];
+    return 0;
+}
