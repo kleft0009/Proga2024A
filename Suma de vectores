@@ -131,3 +131,144 @@ int main() {
     cout<<"\n El producto escalar es: "<<escalar<<endl;
     return 0;
 }
+
+//Arreglo bidimensionales
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int notasGR1[10]={1,2,3,4,5,6,7,8,9,10};
+    int notasGR2[10]={10,9,8,7,6,5,4,3,2,1};
+    //OTRA FORMA
+    int notas[20]={1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1};
+    int notasGrupos[2][10]={
+                            {1,2,3,4,5,6,7,8,9,10},
+                            {10,9,8,7,6,5,4,3,2,1}
+                           };
+    //2 arreglos de 10 elementos
+    //matrices n*m
+    cout<<notasGrupos[0][5];
+    return 0;
+}
+
+//programa para sumar dos matrices
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    //2 matrices de 3*3
+    int matriz[2][3][3];
+    int matrizsuma[3][3];
+    int m, fila, columna;
+    //solicitar datos de las matrices
+    for(m=0; m<2; m++){
+        for(fila=0; fila<3;fila++){
+            for(columna=0; columna<3; columna++){
+                cout<<"En la matriz"<<m<<"Ingrese el dato de  la fila"<<fila<<"y columna"<<columna<<":";
+                cin>>matriz[m][fila][columna];
+            }
+        }
+    }
+    //mostrar las matrices
+    cout<<"Matriz 0: [\n";
+    for(fila=0;fila<3;fila++){
+        for(columna=0;columna<3;columna++){
+            cout<<matriz[1][fila][columna]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<"]";
+    return 0;
+}
+//Programa para sumar matrices
+//matriz [numero cantidad], [filas],[columanas]
+#include <iostream>
+using namespace std;
+int main() {
+    int matriz[2][3][3];
+    int matrizSuma[3][3];
+    int m, fila, columna;
+    //solicitar datos de la primera matriz
+    for(m=0;m<2;m++){
+        cout<<" EN la matriz "<<m<<endl;
+        for(fila=0;fila<3;fila++){
+            for(columna=0; columna<3;columna++){
+                cout<<" ingrese el dato de la fila "<<fila<<" y columna "<<columna<<": ", cin>>matriz[m][fila][columna];
+            }
+        }
+    }
+    cout<<endl;
+    //solicitar datos de la primera matriz
+    for(m=0;m<2;m++){
+        cout<<"\t EN la matriz "<<m<<endl;
+        for(fila=0;fila<3;fila++){
+            cout<<endl;
+            for(columna=0; columna<3;columna++){
+                cout<<"\t "<<matriz[m][fila][columna];
+            }
+            cout<<endl;
+        }
+        cout<<endl;
+    }
+    cout<<"\t Matriz resultante: ";
+    for(m=0;m<1;m++){
+        for(fila=0;fila<3;fila++){
+            cout<<endl;
+            for(columna=0; columna<3;columna++){
+                matrizSuma[fila][columna] = matriz[m][fila][columna]+matriz[m+1][fila][columna];
+                cout<<"\t "<<matrizSuma[fila][columna];
+            }
+            cout<<endl;
+        }
+        cout<<endl;
+    }
+  return 0;
+}
+REVISAR
+//programa para sumar dos matrices
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    //2 matrices de 3*3
+    int matriz[2][3][3];
+    int matrizsuma[3][3];
+    int m, fila, columna;
+    //solicitar datos de las matrices
+    for(m=0; m<2; m++){
+        for(fila=0; fila<3;fila++){
+            for(columna=0; columna<3; columna++){
+                cout<<"En la matriz"<<m<<"Ingrese el dato de  la fila"<<fila<<"y columna"<<columna<<":";
+                cin>>matriz[m][fila][columna];
+            }
+        }
+    }
+    //mostrar las matrices
+    cout<<"Matriz 0= [\n";
+    for(fila=0;fila<3;fila++){
+        for(columna=0;columna<3;columna++){
+            cout<<matriz[1][fila][columna]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<"]\n";
+    //realizamos la suma
+    for(m=0;m<2;m++){
+        for(fila=0;fila<3;fila++){
+            for(columna=0;columna<3;columna++){
+                matrizsuma[fila][columna]+=matriz[m][fila][columna];
+            }
+        }
+    }
+        //mostrar las matriz suma
+    cout<<"Matriz suma 1= [\n";
+    for(fila=0;fila<3;fila++){
+        for(columna=0;columna<3;columna++){
+            cout<<matrizsuma[fila][columna]<<" ";
+        }
+        }
+    return 0;
+}
