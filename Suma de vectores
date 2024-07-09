@@ -1,0 +1,133 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    int vector[4], vector2[4], vectorResultado[4];
+
+    //solicitar el ingreso de datos para el primer vector
+    for(int i =0;i<4;i++) {
+        cout<<" Ingrese el valor "<<i<<" del vector 1: ", cin>>vector[i];
+    }
+    
+    //solicitar el ingreso de datos para el segundo vector
+    for(int i =0;i<4;i++) {
+        cout<<" Ingrese el valor "<<i<<" del vector 2: ", cin>>vector2[i];
+    }
+    
+    //publicación de los vectores ingresados
+    cout<<"\n vector 1: [ ";
+    for(int i =0;i<4;i++) {
+        cout<<vector[i]<<" ";
+    }
+    cout<<"]";
+    
+    //publicación de los vectores ingresados
+    cout<<"\n vector 2: [ ";
+    for(int i =0;i<4;i++) {
+        cout<<vector2[i]<<" ";
+    }
+    cout<<"]";
+    
+    for(int i =0;i<4;i++) {
+        vectorResultado[i] = vector[i] + vector2[i];
+    }
+    
+    //publicación de los vectores ingresados
+    
+    cout<<"\n vector resultado: [ ";
+    for(int i =0;i<4;i++) {
+        cout<<vectorResultado[i]<<" ";
+    }
+    cout<<"]";
+    
+    
+    return 0;
+}
+
+//programa para realizar la suma de dos vectores
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    int vector[4], vector2[4], vectorResultado[4], resta[4];
+
+    //solicitar el ingreso de datos para el primer vector
+    for(int i =0;i<4;i++) {
+        cout<<" Ingrese el valor "<<i+1<<" del vector 1: ", cin>>vector[i];
+    }
+    
+    //solicitar el ingreso de datos para el segundo vector
+    for(int i =0;i<4;i++) {
+        cout<<" Ingrese el valor "<<i+1<<" del vector 2: ", cin>>vector2[i];
+    }
+    
+    //publicación de los vectores ingresados
+    cout<<"\n vector 1: [ ";
+    for(int i =0;i<4;i++) {
+        cout<<vector[i]<<" ";
+    }
+    cout<<"]";
+    
+    //publicación de los vectores ingresados
+    cout<<"\n vector 2: [ ";
+    for(int i =0;i<4;i++) {
+        cout<<vector2[i]<<" ";
+    }
+    cout<<"]";
+    
+    for(int i =0;i<4;i++) {
+        vectorResultado[i] = vector[i] + vector2[i];
+    }
+    for(int i =0;i<4;i++) {
+        resta[i] = vector[i] - vector2[i];
+    }
+    //publicación de los vectores ingresados
+    
+    cout<<"\n vector resta: [ ";
+    for(int i =0;i<4;i++) {
+        cout<<resta[i]<<" ";
+    }
+    cout<<"]";
+    
+    
+    return 0;
+}
+//programa para calcular el producto escalar de dos vectores
+#include <iostream>
+using namespace std;
+int main() {
+    int vector1[3], vector2[3], vectorResultado[3], escalar;
+    cout<<" Producto escalar de dos vectores "<<endl;
+    //solicitar el ingreso de datos para el primer vector
+    for(int i =0;i<3;i++) {
+        cout<<" Ingrese el valor "<<i<<" del vector 1: ", cin>>vector1[i];
+    }
+    //solicitar el ingreso de datos para el segundo vector
+    for(int i =0;i<3;i++) {
+        cout<<" Ingrese el valor "<<i<<" del vector 2: ", cin>>vector2[i];
+    }
+    //publicación de los vectores ingresados
+    cout<<"\n vector 1: [ ";
+    for(int i =0;i<3;i++) {
+        cout<<vector1[i]<<" ";
+    }cout<<"]";
+    //publicación de los vectores ingresados
+    cout<<"\n vector 2: [ ";
+    for(int i =0;i<3;i++) {
+        cout<<vector2[i]<<" ";
+    }cout<<"]";
+    for(int i =0;i<3;i++) {
+        vectorResultado[i] = vector1[i] * vector2[i];
+    }
+    cout<<"\n Vector escalar: [ ";
+    for(int i =0;i<3;i++) {
+        cout<<vectorResultado[i]<<" ";
+        escalar = escalar + vectorResultado[i];
+    }cout<<"]";
+    cout<<"\n El producto escalar es: "<<escalar<<endl;
+    return 0;
+}
