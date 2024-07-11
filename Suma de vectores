@@ -252,6 +252,7 @@ int main() {
         for(columna=0;columna<3;columna++){
             cout<<matriz[1][fila][columna]<<" ";
         }
+//salte a la siguiente fila
         cout<<endl;
     }
     cout<<"]\n";
