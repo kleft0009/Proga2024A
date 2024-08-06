@@ -1,0 +1,78 @@
+//Herencia
+//modificador de acceso
+class  Persona{
+    /*//clase padre
+    public string nombre;
+    //puedo acceder de cualquier class
+    private stringapellido;
+    protected int edad;
+    string direccion;
+    */
+    private String nombre;
+    //puedo acceder de cualquier class
+    private String apellido;
+    private int edad;
+    private String direccion;
+    Persona(String nombre, String apellido, String edad, String direccion){
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.edad=edad;
+        this.direccion=direccion;
+    };
+    //constructur vacio para encerar las variables de esta clase
+};
+class  Estudiante extends Persona{
+    //clase hijo
+    String numUnico;
+};
+class Profesor extends Persona{
+    String cargo;
+};
+class  Administrativo extends Persona{
+    String cargo;
+    String facultad;
+};
+class HelloWorld {
+    public static void main(String[] args) {
+        Persona per=new Persona("Luis", "Perez",15,"Quito");
+        System.out.println("Try programiz.pro");
+    }
+}
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+//netbeans
+//java eclipse
+//Herencia
+//modificador de acceso
+class  Persona{
+    /*//clase padre
+    public string nombre;
+    //puedo acceder de cualquier class
+    private stringapellido;
+    protected int edad;
+    string direccion;
+    */
+    private String nombre;
+    //puedo acceder de cualquier class
+    private String apellido;
+    private int edad;
+    private String direccion;
+    Persona(String nombre, String apellido, int edad, String direccion){
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.edad=edad;
+        this.direccion=direccion;
+    }
+    public String toString(){
+            return "Nombre: "+this.nombre+"\NApellido: "+this.apellido+"\NEdad: "+this.edad+"\nDireccion: "+this.direccion;
+    }
+    //constructur vacio para encerar las variables de esta clase
+}
+
+class Main {
+    public static void main(String[] args) {
+        Persona per=new Persona("Luis", "Perez",15,"Quito");
+        System.out.println(per.toString());
+    }
+}
