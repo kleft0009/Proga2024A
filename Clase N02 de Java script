@@ -76,3 +76,60 @@ class Main {
         System.out.println(per.toString());
     }
 }
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+//netbeans
+//java eclipse
+//Herencia
+//modificador de acceso
+class  Persona{
+    /*//clase padre
+    public string nombre;
+    //puedo acceder de cualquier class
+    private stringapellido;
+    protected int edad;
+    string direccion;
+    */
+    private String nombre;
+    //puedo acceder de cualquier class
+    private String apellido;
+    private int edad;
+    private String direccion;
+    Persona(String nombre, String apellido, int edad, String direccion){
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.edad=edad;
+        this.direccion=direccion;
+    }
+    public String toString(){
+            return "Nombre: "+this.nombre+"\nApellido: "+this.apellido+"\nEdad: "+this.edad+"\nDireccion: "+this.direccion;
+    }
+    //constructur vacio para encerar las variables de esta clase
+}
+
+class Main {
+    public static void main(String[] args) {
+        Persona per=new Persona("Luis", "Perez",15,"Quito");
+        System.out.println(per.toString());
+    }
+}
+
+class Persona{
+    constructor(
+    nombre,
+    //yo quiero que sea evaluado en string
+    apellido,
+    edad,
+    direccion)
+    {}
+}
+class Auto{
+    constructor(
+        marca
+        ){}
+}
+var per=new Persona();
+per.nombre="Luis";
+console.log(per.nombre);
