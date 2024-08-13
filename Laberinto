@@ -1,0 +1,202 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <string>
+
+using namespace std;
+
+struct Jugador {
+    string nombre;
+    int puntaje;
+};
+
+void generarLaberinto(int filas, int columnas, float densidad, int** matriz) {
+    // Inicializar los valores de los muros y espacios
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            if (i == 0 || j == 0 || i == filas - 1 || j == columnas - 1) {
+                matriz[i][j] = 1; // Muros exteriores
+            } else {
+                matriz[i][j] = 0; // Espacios interiores
+            }
+        }
+    }
+
+    // Calcular la cantidad de paredes internas a generar
+    int cantidadParedes = static_cast<int>(filas * columnas * densidad);
+
+    // Generar paredes internas aleatorias
+    srand(static_cast<unsigned>(time(NULL)));
+    for (int i = 0; i < cantidadParedes; i++) {
+        int x = rand() % (columnas - 4) + 2;
+        x = (x / 2) * 2; // Asegurar que x sea par
+        int y = rand() % (filas - 4) + 2;
+        y = (y / 2) * 2; // Asegurar que y sea par
+        matriz[y][x] = 1; // Crear muro
+
+        // Generar paredes adyacentes
+        int mx[4] = { x,  x,  x + 2, x - 2 };
+        int my[4] = { y + 2, y - 2, y, y };
+        int r = rand() % 4;
+        if (my[r] > 0 && my[r] < filas - 1 && mx[r] > 0 && mx[r] < columnas - 1 && matriz[my[r]][mx[r]] == 0) {
+            matriz[my[r]][mx[r]] = 1;
+            matriz[y + (my[r] - y) / 2][x + (mx[r] - x) / 2] = 1;
+        }
+    }
+
+    // Asegurar que las posiciones de inicio y fin estén despejadas
+    matriz[1][1] = 0;
+    matriz[filas - 2][columnas - 2] = 0;
+}
+
+void imprimirLaberinto(int filas, int columnas, int** matriz, int jugadorX, int jugadorY) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            if (i == jugadorX && j == jugadorY) {
+                cout << "P"; // Representar jugador con P
+            } else if (matriz[i][j] == 1) {
+                cout << static_cast<char>(178) << static_cast<char>(178); // Representar muro con ##
+            } else {
+                cout << "  "; // Representar espacio con dos espacios en blanco para alineación
+            }
+        }
+        cout << endl;
+    }
+}
+
+void jugar(Jugador* &jugadores, int &numJugadores) {
+    int filas = 15;
+    int columnas = 15;
+    float densidad = 0.3; // Ajustar densidad según sea necesario
+
+    // Crear la matriz dinámica
+    int** matriz = new int*[filas];
+    for (int i = 0; i < filas; i++) {
+        matriz[i] = new int[columnas];
+    }
+
+    // Generar el laberinto
+    generarLaberinto(filas, columnas, densidad, matriz);
+
+    // Posición inicial del jugador
+    int jugadorX = 1;
+    int jugadorY = 1;
+
+    // Obtener nombre del jugador
+    string nombre;
+    cout << "Ingrese su nombre: ";
+    cin >> nombre;
+
+    // Tiempo inicial
+    clock_t inicio = clock();
+
+    // Juego en bucle
+    while (true) {
+        imprimirLaberinto(filas, columnas, matriz, jugadorX, jugadorY);
+
+
+        // Verificar si el jugador ha llegado al final
+        if (jugadorX == filas - 2 && jugadorY == columnas - 2) {
+            cout << "¡Felicidades! Has encontrado la salida del laberinto." << endl;
+            break;
+        }
+
+        // Leer la entrada del jugador
+        char movimiento;
+        cout << "Ingrese W, A, S, D para moverse o Q para salir: ";
+        cin >> movimiento;
+
+        // Si el jugador quiere salir
+        if (movimiento == 'Q' || movimiento == 'q') {
+            cout << "Has decidido salir del juego." << endl;
+            return;
+        }
+
+        // Actualizar la posición del jugador
+        int nuevoX = jugadorX;
+        int nuevoY = jugadorY;
+        if (movimiento == 'W' || movimiento == 'w') nuevoX--;
+        if (movimiento == 'S' || movimiento == 's') nuevoX++;
+        if (movimiento == 'A' || movimiento == 'a') nuevoY--;
+        if (movimiento == 'D' || movimiento == 'd') nuevoY++;
+
+        // Verificar si el movimiento es válido
+        if (nuevoX >= 0 && nuevoX < filas && nuevoY >= 0 && nuevoY < columnas && matriz[nuevoX][nuevoY] == 0) {
+            jugadorX = nuevoX;
+            jugadorY = nuevoY;
+        }
+    }
+
+    // Tiempo final
+    clock_t fin = clock();
+    double tiempo = double(fin - inicio) / CLOCKS_PER_SEC;
+    int puntaje = static_cast<int>(1000 / tiempo);
+
+    // Añadir el jugador a la lista de puntajes
+    Jugador* temp = new Jugador[numJugadores + 1];
+    for (int i = 0; i < numJugadores; i++) {
+        temp[i] = jugadores[i];
+    }
+    temp[numJugadores].nombre = nombre;
+    temp[numJugadores].puntaje = puntaje;
+    delete[] jugadores;
+    jugadores = temp;
+    numJugadores++;
+
+    // Liberar memoria de la matriz dinámica
+    for (int i = 0; i < filas; i++) {
+        delete[] matriz[i];
+    }
+    delete[] matriz;
+}
+
+void mostrarPuntajes(const Jugador* jugadores, int numJugadores) {
+    cout << "Puntajes de los jugadores:" << endl;
+    for (int i = 0; i < numJugadores; i++) {
+        cout << i + 1 << ". " << jugadores[i].nombre << " - " << jugadores[i].puntaje << endl;
+    }
+}
+
+void mostrarCreditos() {
+    cout << "Creditos:" << endl;
+    cout << "1. Kevin Azana" << endl;
+}
+
+int main() {
+    Jugador* jugadores = nullptr;
+    int numJugadores = 0;
+    int opcion;
+
+    do {
+        cout << "Menu:" << endl;
+        cout << "1. Jugar" << endl;
+        cout << "2. Puntajes" << endl;
+        cout << "3. Salir" << endl;
+        cout << "4. Creditos" << endl;
+        cout << "Ingrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                jugar(jugadores, numJugadores);
+                break;
+            case 2:
+                mostrarPuntajes(jugadores, numJugadores);
+                break;
+            case 3:
+                cout << "Saliendo del juego..." << endl;
+                break;
+            case 4:
+                mostrarCreditos();
+                break;
+            default:
+                cout << "Opción no válida. Intente nuevamente." << endl;
+                break;
+        }
+    } while (opcion != 3);
+
+    // Liberar memoria al final
+    delete[] jugadores;
+
+    return 0;
+}
