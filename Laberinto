@@ -160,6 +160,7 @@ void mostrarPuntajes(const Jugador* jugadores, int numJugadores) {
 void mostrarCreditos() {
     cout << "Creditos:" << endl;
     cout << "1. Kevin Azana" << endl;
+    cout << "2. Martin Roca" << endl;
 }
 
 int main() {
